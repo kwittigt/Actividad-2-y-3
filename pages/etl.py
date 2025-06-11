@@ -6,7 +6,7 @@ from utils import cargar_datos, limpiar_datos
 import os
 
 st.set_page_config(page_title="Flujo ETL", layout="wide")
-st.title("Simulación ETL → MongoDB 📊")
+st.title("Simulación ETL → MongoDB ")
 
 # Parámetros de conexión (lo ideal: .env + st.secrets)
 uri = st.text_input("URI MongoDB", "mongodb://localhost:27017")

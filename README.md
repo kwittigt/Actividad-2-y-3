@@ -1,19 +1,19 @@
-Evaluación Integrada – Ciencia de Datos
+Proyecto Integrador – Ciencia de Datos
 
-## Organización
+## Estructura del proyecto
 
-- `app.py`: aplicación principal
-- `etl.py`: proceso ETL con conexión a MongoDB
-- `utils.py`: utilidades para carga y limpieza de datos
-- `pages/`: páginas de Streamlit (EDA, comparativo)
-- `static/`: imagen del diagrama de arquitectura
-- `data/`: archivos de entrada y salida procesados
+- `app.py`: interfaz principal de la aplicación
+- `etl.py`: módulo para el flujo ETL y conexión con MongoDB
+- `utils.py`: funciones auxiliares para importar y limpiar datos
+- `pages/`: secciones adicionales de Streamlit (EDA, comparación)
+- `static/`: recursos gráficos y diagramas de arquitectura
+- `data/`: archivos de entrada y resultados procesados
 
-## Instrucciones de uso
+## Pasos para ejecutar
 
 ```bash
 python -m venv venv
-venv\Scripts\activate       # o source venv/bin/activate
+venv\Scripts\activate       # o source venv/bin/activate en Linux/Mac
 pip install -r requirements.txt
 python etl.py -f data/ejemplo.xlsx
 streamlit run app.py
